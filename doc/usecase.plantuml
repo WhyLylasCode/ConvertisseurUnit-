@@ -1,0 +1,9 @@
+@startuml Diagramme de classes
+
+(Convertir une valeur) as convertir
+actor utilisateur
+
+utilisateur -- convertir
+
+
+@enduml

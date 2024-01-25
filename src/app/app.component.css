@@ -1,0 +1,21 @@
+form{
+    text-align: center;
+}
+
+input, label{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+button{
+    text-align: center;
+    padding: 10px;
+    background-color: #BE95C4;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 9px;
+}
