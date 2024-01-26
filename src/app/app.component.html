@@ -2,19 +2,26 @@
     <label for="userInput">Votre nombre :</label>
     <input name="user" placeholder="0" type="number" [(ngModel)]="userInput">
     
-    <label for="uniteDepart">Unité de depart :
+    <label for="uniteUtilise">Unité de depart :
     <select name="uniteUtilise" [(ngModel)]="uniteUtilise">
-        <option value="meters">m</option>
-        <option value="centimeters">cm</option>
+        <option value="km">km</option>
+        <option value="m">m</option>
+        <option value="dm">dm</option>
+        <option value="cm">cm</option>
+        <option value="mm">mm</option>
     </select>
     </label>
+
     <label for="uniteArrivee">Unité d'arrivée :
-    <select name="uniteArrivee"  [(ngModel)]="uniteArrivee">
-        <option value="meters" id="meters">m</option>
-        <option value="centimeters" id="centimeters">cm</option>
+    <select name="uniteArrivee" [(ngModel)]="uniteArrivee">
+        <option value="km">km</option>
+        <option value="m">m</option>
+        <option value="dm">dm</option>
+        <option value="cm">cm</option>
+        <option value="mm">mm</option>
     </select>
     </label>
     
      <button (click)="onclick()">Convertir</button>
-     <p *ngIf="resultat !== undefined">"Résultat est de {{resultat}} {{uniteArrivee === 'meters' ? 'm' : 'cm'}}"</p>
+     <p *ngIf="resultat !== undefined">{{userInput}} {{uniteUtilise}} = {{resultat}} {{uniteArrivee}}</p>
 </form> 

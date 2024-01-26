@@ -2,6 +2,15 @@ form{
     text-align: center;
 }
 
+input{
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #8488bd;
+    border: none;
+    text-align: center;
+}
+
+
 input, label{
     display: flex;
     margin: 0 auto;
@@ -13,7 +22,7 @@ input, label{
 button{
     text-align: center;
     padding: 10px;
-    background-color: #BE95C4;
+    background-color: #b789be;
     border: none;
     color: white;
     cursor: pointer;
